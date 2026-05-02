@@ -1,0 +1,110 @@
+export const player = {
+  username: "PixelKnight_23",
+  level: 18,
+  country: "Guatemala",
+  favoriteGenre: "RPG",
+};
+
+export const ownedGames = [
+  {
+    gameId: 1,
+    titulo: "Cyber Goblins",
+    fechaLanzamiento: "2024-02-15",
+    precio: 14.99,
+    descripcion:
+      "Un RPG retro donde un grupo de goblins hackers explora mazmorras digitales llenas de enemigos, cofres y secretos.",
+    idiomas: ["Español", "Inglés", "Japonés"],
+    requisitos: ["Windows 10", "8 GB RAM", "GTX 960", "4 GB de espacio"],
+    genero: "RPG",
+    plataforma: "PC",
+    desarrollador: "ByteForge Studio",
+    horasJugadas: 42,
+    rating: 4.8,
+    estado: "Jugando",
+  },
+  {
+    gameId: 2,
+    titulo: "Neon Drift 89",
+    fechaLanzamiento: "2023-08-22",
+    precio: 9.99,
+    descripcion:
+      "Juego de carreras arcade con estética cyberpunk, pistas nocturnas y música synthwave.",
+    idiomas: ["Español", "Inglés"],
+    requisitos: ["Windows 10", "4 GB RAM", "Intel HD Graphics", "2 GB de espacio"],
+    genero: "Carreras",
+    plataforma: "PC",
+    desarrollador: "Turbo Pixel Games",
+    horasJugadas: 16,
+    rating: 4.3,
+    estado: "Completado",
+  },
+  {
+    gameId: 3,
+    titulo: "Dungeon Byte",
+    fechaLanzamiento: "2022-11-05",
+    precio: 19.99,
+    descripcion:
+      "Aventura de exploración con combate por turnos, reliquias antiguas y mundos generados proceduralmente.",
+    idiomas: ["Español", "Inglés", "Francés"],
+    requisitos: ["Nintendo Switch", "1 GB de espacio"],
+    genero: "Aventura",
+    plataforma: "Switch",
+    desarrollador: "Crystal Banana",
+    horasJugadas: 28,
+    rating: 4.6,
+    estado: "Favorito",
+  },
+  {
+    gameId: 4,
+    titulo: "Star Farmers",
+    fechaLanzamiento: "2024-06-12",
+    precio: 7.99,
+    descripcion:
+      "Simulador espacial donde cultivas planetas, mejoras tu nave y vendes recursos en mercados galácticos.",
+    idiomas: ["Español", "Inglés", "Portugués"],
+    requisitos: ["Windows 11", "8 GB RAM", "GTX 1050", "6 GB de espacio"],
+    genero: "Simulación",
+    plataforma: "PC",
+    desarrollador: "Orbit Cactus",
+    horasJugadas: 9,
+    rating: 4.1,
+    estado: "Nuevo",
+  },
+  {
+    gameId: 5,
+    titulo: "Mecha Arena X",
+    fechaLanzamiento: "2021-04-30",
+    precio: 24.99,
+    descripcion:
+      "Juego de acción con combates de robots gigantes, arenas destructibles y modos competitivos.",
+    idiomas: ["Español", "Inglés", "Alemán"],
+    requisitos: ["PlayStation 5", "15 GB de espacio"],
+    genero: "Acción",
+    plataforma: "PlayStation",
+    desarrollador: "Titan Circuit",
+    horasJugadas: 33,
+    rating: 4.7,
+    estado: "Jugando",
+  },
+];
+
+export const recommendedGames = [
+  {
+    id: 101,
+    titulo: "Dragon Protocol",
+    genero: "RPG",
+    reason: "Similar a tus juegos favoritos",
+  },
+  {
+    id: 102,
+    titulo: "Turbo Galaxy",
+    genero: "Carreras",
+    reason: "Usuarios similares lo jugaron",
+  },
+  {
+    id: 103,
+    titulo: "Castle Loop",
+    genero: "Aventura",
+    reason: "Disponible en tus plataformas",
+  },
+];
