@@ -9,6 +9,7 @@ import Store from "./screens/Store";
 import StoreGameDetails from "./screens/StoreGameDetails";
 import AdminGames from "./screens/AdminGames";
 import RecommendationsPage from "./screens/RecommendationsPage";
+import Perfil from "./screens/Perfil";
 
 function App() {
   const [selectedGame, setSelectedGame] = useState(null);
@@ -101,15 +102,17 @@ function App() {
           />
         )
       ) : currentScreen === "store" ? (
-  <Store onSelectGame={handleSelectStoreGame} />
-) : currentScreen === "recommendations" ? (
-  <RecommendationsPage
-    usuario={usuarioActual}
-    onSelectGame={handleSelectStoreGame}
-  />
-) : (
-  <Home usuario={usuarioActual} onSelectGame={handleSelectLibraryGame} />
-)}
+        <Store onSelectGame={handleSelectStoreGame} />
+      ) : currentScreen === "recommendations" ? (
+        <RecommendationsPage
+          usuario={usuarioActual}
+          onSelectGame={handleSelectStoreGame}
+        />
+      ) : currentScreen === "profile" || currentScreen === "perfil" ? (
+        <Perfil usuario={usuarioActual} onLogout={handleLogout} />
+      ) : (
+        <Home usuario={usuarioActual} onSelectGame={handleSelectLibraryGame} />
+      )}
     </main>
   );
 }
